@@ -1,0 +1,109 @@
+You're helping me finalize a modular AI-powered content automation web app for a YouTube Shorts finance channel hosted by a fictional expert named Warren Black.
+
+Please carefully follow every instruction below in one go and ensure you deliver a fully downloadable, clean zip folder of the final working app, and also preview the Flask app so I can test it visually.
+
+🧠 OBJECTIVE
+Build a clean web-based version of the project called FinalCleanApp. This is a modular content creation pipeline with multiple agents that generate topics, scripts, voiceovers, video placeholders, thumbnails, and an upload log.
+
+You are to clean, rebuild, and simplify everything to work as a basic Flask app so I can run it locally or deploy later. You must remove all duplicates, simplify structure, and make it plug-and-play.
+
+✅ TASK LIST (DO IN ONE PROMPT)
+1. 🧹 CLEANUP FILES
+Delete all extra or duplicate folders like:
+
+warren_black_pipeline/
+
+warren_black_system/
+
+__pycache__/ folders
+
+Keep only:
+
+One clean agents/ folder with the agent files.
+
+A working main.py.
+
+Any required utils/ or data.json.
+
+2. 🧩 FINAL FILE STRUCTURE
+Create a new clean folder named FinalCleanApp/ and place everything like this:
+
+php
+Copy
+Edit
+FinalCleanApp/
+│
+├── app.py                     # Flask app entry point
+├── main.py                   # Main logic runner (calls agents in order)
+├── agents/
+│   ├── __init__.py
+│   ├── trend_seeker.py
+│   ├── script_smith.py
+│   ├── vox_crafter.py
+│   ├── clip_maker.py
+│   ├── thumb_wizard.py
+│   └── upload_pilot.py
+│
+├── templates/
+│   └── index.html            # Simple form UI to trigger video creation
+│
+├── static/
+│   ├── style.css
+│   └── output/               # Store generated mock files
+│
+├── README.md
+└── data.json
+3. ⚙️ FLASK APP (app.py)
+Build a basic Flask web interface that:
+
+Loads a form where user can click “Create Finance Short”
+
+When clicked, it runs main.py, which:
+
+Gets trending topic
+
+Generates script
+
+Simulates voice, video, thumbnail, upload log
+
+Then shows the:
+
+Topic
+
+Script
+
+Mock file paths (video, thumbnail)
+
+Upload status
+
+4. 🧪 MOCKS ONLY
+This is a mock version. Use hardcoded or simulated logic.
+Do not use any API or internet access.
+
+5. 🖥️ SHOW PREVIEW
+Very important: Show the running app in the Replit Preview tab when it’s done so I can test the form and see outputs before downloading the zip.
+
+6. 📦 FINAL STEP — EXPORT
+Once complete, zip the full FinalCleanApp/ folder and place it in the root directory.
+
+Name the zip file: FinalCleanApp_Web.zip
+
+Make sure it includes everything: app.py, agents, templates, static files, etc.
+
+Make it downloadable by me.
+
+✅ END RESULT
+I expect:
+
+A working Flask app I can run locally.
+
+One clean zip file: FinalCleanApp_Web.zip
+
+Preview working in Replit
+
+No extra folders or duplicate agent copies
+
+Clean code, no placeholders like [TO DO]
+
+Please handle this as a final production-quality export, as I only have one AI credit left. Thank you.
+

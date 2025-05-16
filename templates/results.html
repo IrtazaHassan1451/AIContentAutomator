@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Results - Warren Black Finance</title>
+    <!-- Bootstrap CSS from Replit CDN -->
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container py-4">
+        <!-- Header -->
+        <header class="d-flex flex-column align-items-center text-center mb-4">
+            <div class="logo-container mb-3">
+                <i class="fas fa-chart-line fa-3x text-primary"></i>
+            </div>
+            <h1 class="fw-bold">Warren Black</h1>
+            <h2 class="h4 text-secondary">Finance Content Results</h2>
+            <div class="mt-3">
+                <a href="{{ url_for('new_content') }}" class="btn btn-outline-primary">
+                    <i class="fas fa-plus me-2"></i> Create New Content
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Alert Messages -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <!-- Success Alert -->
+            <div class="alert alert-success mb-4" role="alert">
+                <h4 class="alert-heading"><i class="fas fa-check-circle me-2"></i> Content Generated Successfully!</h4>
+                <p>Your Warren Black finance short has been created and is ready for review.</p>
+            </div>
+
+            <!-- Results Overview -->
+            <div class="row mb-4">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100 border-primary">
+                        <div class="card-header bg-primary bg-opacity-25">
+                            <h3 class="h5 mb-0">Topic</h3>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="h5">{{ results.topic.title }}</h4>
+                            <p class="small text-muted">
+                                <span class="badge bg-secondary me-1">{{ results.topic.category }}</span>
+                                <span class="badge bg-{{ 'success' if results.topic.sentiment == 'bullish' else 'danger' if results.topic.sentiment == 'bearish' else 'info' }}">
+                                    {{ results.topic.sentiment }}
+                                </span>
+                            </p>
+                            <p class="mb-0"><small>Trending Score: {{ results.topic.trending_score }}/100</small></p>
+                            <p class="mb-0"><small>Search Volume: {{ results.topic.search_volume }}</small></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100 border-primary">
+                        <div class="card-header bg-primary bg-opacity-25">
+                            <h3 class="h5 mb-0">Media</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="media-info">
+                                <p><i class="fas fa-video me-2 text-primary"></i> Video: {{ results.video.duration }} / {{ results.video.file_size }}</p>
+                                <p><i class="fas fa-microphone me-2 text-primary"></i> Audio: {{ results.voiceover.duration }} / {{ results.voiceover.file_size }}</p>
+                                <p><i class="fas fa-image me-2 text-primary"></i> Thumbnail: {{ results.thumbnail.dimensions }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-primary">
+                        <div class="card-header bg-primary bg-opacity-25">
+                            <h3 class="h5 mb-0">Upload Status</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i class="fas fa-clock me-2 text-primary"></i> Scheduled: {{ results.upload.scheduled_time }}</p>
+                            <p><i class="fas fa-chart-line me-2 text-primary"></i> Est. Views (24h): {{ results.upload.projected_metrics.estimated_views_24h }}</p>
+                            <p><i class="fas fa-percentage me-2 text-primary"></i> Est. Engagement: {{ results.upload.projected_metrics.estimated_engagement_rate }}</p>
+                            <p class="mb-0"><span class="badge bg-success">{{ results.upload.status }}</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Script Content -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary bg-opacity-25">
+                    <h3 class="h5 mb-0">Script Content</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 mb-3 mb-md-0 text-center">
+                            <img src="https://pixabay.com/get/g6fa2dbb393a5af328fe50ed954a303a7736d8a6b5e071c49e53391f44a792a8f02b08b04f93fdc56970e532604ce07ffad17a165091a6a8ebea6fc5249a89b74_1280.jpg" 
+                                 alt="Warren Black" 
+                                 class="img-fluid rounded-circle mb-2" 
+                                 style="max-width: 120px;">
+                            <h4 class="h6 mb-0">Warren Black</h4>
+                            <p class="small text-muted">Finance Expert</p>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="script-text">
+                                <p class="script-paragraph">{{ results.script.text }}</p>
+                            </div>
+                            <div class="script-metadata mt-3">
+                                <span class="badge bg-secondary me-2">{{ results.script.word_count }} words</span>
+                                <span class="badge bg-secondary me-2">{{ results.script.estimated_duration }}</span>
+                                <span class="badge bg-secondary">{{ results.script.target_audience }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visuals Preview -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary bg-opacity-25">
+                    <h3 class="h5 mb-0">Visual Elements</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <!-- Video Preview -->
+                        <div class="col-md-8 mb-3 mb-md-0">
+                            <div class="card">
+                                <div class="card-header bg-dark bg-opacity-50">
+                                    <h4 class="h6 mb-0">Video Preview (Mock)</h4>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="video-mock d-flex justify-content-center align-items-center bg-dark" style="height: 300px; position: relative;">
+                                        <!-- Finance chart background -->
+                                        <img src="{{ results.video.background_images[0] }}" 
+                                             alt="Finance Chart" 
+                                             class="img-fluid opacity-50" 
+                                             style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
+                                        
+                                        <!-- Overlay text -->
+                                        <div class="text-center p-4" style="position: relative; z-index: 2;">
+                                            <i class="fas fa-play-circle fa-4x text-primary mb-3"></i>
+                                            <h5>{{ results.topic.title }}</h5>
+                                            <p class="text-muted">{{ results.video.duration }} | {{ results.video.resolution }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Thumbnail Preview -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header bg-dark bg-opacity-50">
+                                    <h4 class="h6 mb-0">Thumbnail Preview</h4>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="thumbnail-mock d-flex justify-content-center align-items-center bg-dark" 
+                                         style="height: 150px; position: relative;">
+                                        <!-- Thumbnail background (stylized) -->
+                                        <div style="position: absolute; width: 100%; height: 100%; background: linear-gradient(135deg, {{ results.thumbnail.colors.primary }} 0%, {{ results.thumbnail.colors.secondary }} 100%);"></div>
+                                        
+                                        <!-- Overlay text -->
+                                        <div class="text-center px-3" style="position: relative; z-index: 2;">
+                                            <h5 style="color: white; text-shadow: 2px 2px 3px rgba(0,0,0,0.7); font-size: 1.1rem;">
+                                                {{ results.thumbnail.title_text }}
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <small>Style: {{ results.thumbnail.style }}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upload Details -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary bg-opacity-25">
+                    <h3 class="h5 mb-0">Upload Details</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="h6">Title</h4>
+                            <p>{{ results.upload.title }}</p>
+                            
+                            <h4 class="h6 mt-3">Description</h4>
+                            <p>{{ results.upload.description }}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="h6">Tags</h4>
+                            <div>
+                                {% for tag in results.upload.tags %}
+                                    <span class="badge bg-secondary me-1 mb-1">{{ tag }}</span>
+                                {% endfor %}
+                            </div>
+                            
+                            <h4 class="h6 mt-3">Upload Schedule</h4>
+                            <p>
+                                <i class="fas fa-calendar me-2"></i> {{ results.upload.scheduled_time }}<br>
+                                <i class="fas fa-eye me-2"></i> {{ results.upload.visibility }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Actions -->
+            <div class="d-flex justify-content-center mt-4">
+                <a href="{{ url_for('new_content') }}" class="btn btn-primary btn-lg mx-2">
+                    <i class="fas fa-plus me-2"></i> Create New Content
+                </a>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-5 text-center text-muted">
+            <p>&copy; 2023 Warren Black Finance Content System</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

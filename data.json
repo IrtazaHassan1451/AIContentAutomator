@@ -1,100 +1,100 @@
 {
-  "topic": {
-    "title": "5 Signs We're Heading Into a Recession",
-    "keyword": "recession",
-    "sentiment": "bearish",
-    "category": "economy",
-    "created_at": "2023-07-15 08:30:45",
-    "trending_score": 87,
-    "search_volume": "35K monthly searches"
-  },
-  "script": {
-    "text": "Warren Black with an urgent update. recession is showing concerning signals. The technical indicators I watch are flashing warning signs we haven't seen since 2007. Red flag number one: The Leading Economic Index has fallen for 10 consecutive months. This matters because this indicator has preceded every recession for the past 60 years. Second warning sign: Consumer sentiment and spending patterns are diverging. The implications? people say one thing in surveys but their credit card data shows something else entirely. Final indicator: Corporate earnings guidance is increasingly cautious for Q3 and Q4. My advice right now: Cash positions and defensive assets deserve your attention right now. Share this with someone who needs to hear it. Follow for more financial warnings.",
-    "word_count": 112,
-    "estimated_duration": "37 seconds",
-    "target_audience": "Finance enthusiasts, investors, aged 25-45",
-    "created_at": "2023-07-15 08:31:15",
-    "topic_title": "5 Signs We're Heading Into a Recession"
-  },
-  "voiceover": {
-    "filename": "warren_black_voiceover_20230715083145.mp3",
-    "filepath": "static/output/warren_black_voiceover_20230715083145.mp3",
-    "file_size": "168 KB",
-    "duration": "0:37",
-    "voice_settings": {
-      "voice": "Warren Black (Male)",
-      "speed": 1.02,
-      "pitch": 1.0,
-      "emphasis": "strong",
-      "clarity": 0.95
+    "topic": {
+        "title": "High-Yield Dividend Stocks Warren Buffett Loves",
+        "keyword": "dividends",
+        "sentiment": "bullish",
+        "category": "investing",
+        "created_at": "2025-05-16 11:11:21",
+        "trending_score": 77,
+        "search_volume": "49K monthly searches"
     },
-    "created_at": "2023-07-15 08:31:45",
-    "script_sample": "Warren Black with an urgent update. recession is showing concerning signals. The technical indicators I ...",
-    "status": "Successfully generated (simulated)"
-  },
-  "video": {
-    "filename": "warren_black_short_20230715083215.mp4",
-    "filepath": "static/output/warren_black_short_20230715083215.mp4",
-    "file_size": "18.5 MB",
-    "duration": "0:37",
-    "resolution": "1080x1920",
-    "fps": 30,
-    "background_images": [
-      "https://pixabay.com/get/g61f6baad3cfd0b0cebc5cbde541faa7d67f3e4038223ebbdbaf3ed57eda14bfd2615a165c8629fce26de91aeed9e29dd09150d548a9ba309f2e8694c2f7308e0_1280.jpg",
-      "https://pixabay.com/get/g35c15c6cede25afb2d05d79c2b784a8c9c810177fcde32f3c5d2dfeadccf587b725527c0c1352af0181e45a18f52ad8f8f83d470ea0aebab1e0748ab92cbb898_1280.jpg",
-      "https://pixabay.com/get/g4779a13f083d0d2286b118e38e724bda49b9e1e274f3903beb1c2f1e6200850235313a1c3b60ee9650ce3188b2c33e5de8dd0dbda1d31c37483ac28089a851ea_1280.jpg"
-    ],
-    "warren_black_image": "https://pixabay.com/get/g6fa2dbb393a5af328fe50ed954a303a7736d8a6b5e071c49e53391f44a792a8f02b08b04f93fdc56970e532604ce07ffad17a165091a6a8ebea6fc5249a89b74_1280.jpg",
-    "created_at": "2023-07-15 08:32:15",
-    "captions": "Auto-generated",
-    "status": "Successfully rendered (simulated)"
-  },
-  "thumbnail": {
-    "filename": "warren_black_thumb_20230715083245.jpg",
-    "filepath": "static/output/warren_black_thumb_20230715083245.jpg",
-    "title_text": "5 Signs We're Heading Into a Rec...",
-    "style": "Dramatic finance chart with arrow",
-    "colors": {
-      "primary": "#003049",
-      "secondary": "#FCBF49",
-      "accent": "#D62828"
+    "script": {
+        "text": "Hey finance fans, Warren Black here. Let's talk about dividends. With market volatility increasing, dividend aristocrats are looking more attractive than ever. First point - Dividend payers have outperformed growth stocks in 7 of the last 10 recessions. This is crucial because they provide income regardless of market conditions. Second - The power of dividend reinvestment compounds significantly over time. What most people don't realize is Einstein called compound interest the eighth wonder of the world for a reason. Finally - Tax-advantaged accounts maximize dividend efficiency. Remember this: A 4% dividend yield can provide nearly 40% of historical stock returns with lower volatility. If you found this helpful, tap like and follow for more financial insights.",
+        "word_count": 116,
+        "estimated_duration": "38 seconds",
+        "target_audience": "Finance enthusiasts, investors, aged 25-45",
+        "created_at": "2025-05-16 11:11:22",
+        "topic_title": "High-Yield Dividend Stocks Warren Buffett Loves"
     },
-    "fonts": {
-      "title": "Montserrat Bold",
-      "subtitle": "Open Sans"
+    "voiceover": {
+        "filename": "warren_black_voiceover_20250516111123.mp3",
+        "filepath": "static/output/warren_black_voiceover_20250516111123.mp3",
+        "file_size": "174 KB",
+        "duration": "0:38",
+        "voice_settings": {
+            "voice": "Warren Black (Male)",
+            "speed": 1.0429088058181744,
+            "pitch": 1.0,
+            "emphasis": "moderate",
+            "clarity": 0.9577538568791263
+        },
+        "created_at": "2025-05-16 11:11:23",
+        "script_sample": "Hey finance fans, Warren Black here. Let's talk about dividends. With market volatility increasing, ...",
+        "status": "Successfully generated (simulated)"
     },
-    "dimensions": "1280x720",
-    "file_size": "345 KB",
-    "created_at": "2023-07-15 08:32:45",
-    "status": "Successfully generated (simulated)"
-  },
-  "upload": {
-    "title": "5 Signs We're Heading Into a Recession",
-    "description": "Warren Black with an urgent update. recession is showing concerning signals. The technical indicators I watch are flashing... Warren Black brings you daily financial insights to help you build wealth and secure your future. Follow for more!",
-    "tags": [
-      "finance",
-      "investing",
-      "money",
-      "warren black",
-      "recession",
-      "economy",
-      "economic news",
-      "financial freedom",
-      "market update"
-    ],
-    "category": "Finance",
-    "visibility": "Public",
-    "scheduled_time": "2023-07-16 07:30:45",
-    "estimated_duration": "0:37",
-    "thumbnail": "warren_black_thumb_20230715083245.jpg",
-    "status": "Scheduled for upload",
-    "channel": "Warren Black Finance",
-    "created_at": "2023-07-15 08:33:00",
-    "projected_metrics": {
-      "estimated_views_24h": 3250,
-      "estimated_engagement_rate": "5.8%",
-      "target_audience": "Finance enthusiasts, 25-45 years old"
-    }
-  },
-  "timestamp": "2023-07-15 08:33:15"
+    "video": {
+        "filename": "warren_black_short_20250516111125.mp4",
+        "filepath": "static/output/warren_black_short_20250516111125.mp4",
+        "file_size": "19.0 MB",
+        "duration": "0:38",
+        "resolution": "1080x1920",
+        "fps": 30,
+        "background_images": [
+            "https://pixabay.com/get/g61f6baad3cfd0b0cebc5cbde541faa7d67f3e4038223ebbdbaf3ed57eda14bfd2615a165c8629fce26de91aeed9e29dd09150d548a9ba309f2e8694c2f7308e0_1280.jpg",
+            "https://pixabay.com/get/g4779a13f083d0d2286b118e38e724bda49b9e1e274f3903beb1c2f1e6200850235313a1c3b60ee9650ce3188b2c33e5de8dd0dbda1d31c37483ac28089a851ea_1280.jpg",
+            "https://pixabay.com/get/g80f86e0223ab1bcedb78d6d75c5ad4e6987f2151fa933442ae0ce495bb102e2cd9b439ada8765116cd5880670c1e1ee5a5b45d5aa508c4a162b7f6ce160f3516_1280.jpg"
+        ],
+        "warren_black_image": "https://pixabay.com/get/g6fa2dbb393a5af328fe50ed954a303a7736d8a6b5e071c49e53391f44a792a8f02b08b04f93fdc56970e532604ce07ffad17a165091a6a8ebea6fc5249a89b74_1280.jpg",
+        "created_at": "2025-05-16 11:11:25",
+        "captions": "Auto-generated",
+        "status": "Successfully rendered (simulated)"
+    },
+    "thumbnail": {
+        "filename": "warren_black_thumb_20250516111126.jpg",
+        "filepath": "static/output/warren_black_thumb_20250516111126.jpg",
+        "title_text": "High-Yield Dividend Stocks ...",
+        "style": "Money/wealth visualization with text overlay",
+        "colors": {
+            "primary": "#5F0F40",
+            "secondary": "#9A031E",
+            "accent": "#FB8B24"
+        },
+        "fonts": {
+            "title": "Playfair Display",
+            "subtitle": "Source Sans Pro"
+        },
+        "dimensions": "1280x720",
+        "file_size": "429 KB",
+        "created_at": "2025-05-16 11:11:26",
+        "status": "Successfully generated (simulated)"
+    },
+    "upload": {
+        "title": "High-Yield Dividend Stocks Warren Buffett Loves",
+        "description": "Hey finance fans, Warren Black here. Let's talk about dividends. With market volatility increasing, ... Warren Black brings you daily financial insights to help you build wealth and secure your future. Follow for more!",
+        "tags": [
+            "finance",
+            "investing",
+            "money",
+            "warren black",
+            "dividends",
+            "investing",
+            "wealth",
+            "economic news",
+            "personal finance"
+        ],
+        "category": "Finance",
+        "visibility": "Public",
+        "scheduled_time": "2025-05-16 13:11:27",
+        "estimated_duration": "0:38",
+        "thumbnail": "warren_black_thumb_20250516111126.jpg",
+        "status": "Scheduled for upload",
+        "channel": "Warren Black Finance",
+        "created_at": "2025-05-16 11:11:27",
+        "projected_metrics": {
+            "estimated_views_24h": 2432,
+            "estimated_engagement_rate": "5.3%",
+            "target_audience": "Finance enthusiasts, 25-45 years old"
+        }
+    },
+    "timestamp": "2025-05-16 11:11:27"
 }
